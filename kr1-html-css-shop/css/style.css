@@ -262,3 +262,35 @@ button:disabled:hover {
   margin: 0 0 24px;
 }
 
+/* Форма */
+.order-form {
+  display: grid;
+  gap: var(--space);
+  max-width: 560px;
+}
+.order-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.order-form__field--check {
+  flex-direction: row;
+  align-items: center;
+}
+.order-form__label {
+  font-weight: 600;
+}
+.order-form__input {
+  padding: 10px;
+  font: inherit;
+  border: 1px solid #6b7280;
+  border-radius: var(--radius);
+}
+.order-form__input:hover {
+  border-color: var(--primary);
+}
+.order-form__actions {
+  display: flex;
+  gap: var(--space);
+}
+
