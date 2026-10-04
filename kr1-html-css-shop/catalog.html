@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Каталог — Винтаж-лавка</title>
+    <meta
+      name="description"
+      content="Каталог Винтаж-лавки: камеры, блокноты, инструменты, линейки и другие винтажные вещи с ценами."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="site-header__logo" href="index.html">Винтаж-лавка</a>
+        <nav class="site-nav" aria-label="Основное меню">
+          <ul class="site-nav__list">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-nav__item">
+              <a
+                class="site-nav__link site-nav__link--active"
+                href="catalog.html"
+                aria-current="page"
+                >Каталог</a
+              >
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1>Каталог</h1>
+          <div class="catalog">
+            <aside class="filters" aria-labelledby="filters-title">
+              <h2 id="filters-title">Фильтры</h2>
+              <label class="filters__option" for="f-hit"
+                ><input type="checkbox" id="f-hit" name="hit" /> Хит</label
+              >
+              <label class="filters__option" for="f-cameras"
+                ><input type="checkbox" id="f-cameras" name="cameras" />
+                Камеры</label
+              >
+              <label class="filters__option" for="f-paper"
+                ><input type="checkbox" id="f-paper" name="paper" />
+                Канцелярия</label
+              >
+              <label class="filters__option" for="f-tools"
+                ><input type="checkbox" id="f-tools" name="tools" />
+                Инструменты</label
+              >
+            </aside>
+
+            <div>
+              <p class="catalog__toolbar">
+                <a class="button button--outline" href="#quick-order"
+                  >Быстрая заявка</a
+                >
+              </p>
+              <div class="product-grid">
+                <article class="product-card">
+                  <span class="product-card__badge">Хит</span>
+                  <img
+                    class="product-card__img"
+                    src="images/work-3.jpg"
+                    alt="Две плёночные камеры на деревянной полке"
+                    width="650"
+                    height="350"
+                  />
+                  <h3 class="product-card__title">Плёночная камера</h3>
+                  <p class="product-card__desc">
+                    Механическая камера 35 мм в рабочем состоянии.
+                  </p>
+                  <p class="product-card__price">12 900 ₽</p>
+                  <a class="button product-card__button" href="product.html"
+                    >Подробнее</a
+                  >
+                </article>
+                <article class="product-card">
+                  <img
+                    class="product-card__img"
+                    src="images/work-2.jpg"
+                    alt="Блокноты и деревянные подставки на столе"
+                    width="650"
+                    height="350"
+                  />
+                  <h3 class="product-card__title">Блокнот в обложке</h3>
+                  <p class="product-card__desc">
+                    Плотная бумага и прочная обложка.
+                  </p>
+                  <p class="product-card__price">890 ₽</p>
+                  <a
+                    class="button product-card__button"
+                    href="product-notebook.html"
+                    >Подробнее</a
+                  >
+                </article>
+                <article class="product-card">
+                  <img
+                    class="product-card__img"
+                    src="images/work-6.jpg"
+                    alt="Набор старых инструментов на тёмной доске"
+                    width="650"
+                    height="350"
+                  />
+                  <h3 class="product-card__title">Набор инструментов</h3>
+                  <p class="product-card__desc">
+                    Молоток, топор и рабочие перчатки.
+                  </p>
+                  <p class="product-card__price">4 500 ₽</p>
+                  <a
+                    class="button product-card__button"
+                    href="product-tools.html"
+                    >Подробнее</a
+                  >
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div
+        class="modal"
+        id="quick-order"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-title"
+      >
+        <div class="modal__box">
+          <a class="modal__close" href="#" aria-label="Закрыть">×</a>
+          <h2 id="modal-title">Быстрая заявка</h2>
+          <p>Оставьте заявку, и мы свяжемся с вами в течение рабочего дня.</p>
+          <a class="button" href="order.html">Перейти к форме заявки</a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <section class="site-footer__about" id="about">
+          <h2 class="site-footer__title">О нас</h2>
+          <p class="site-footer__text">
+            Винтаж-лавка — небольшой магазин старинных и винтажных вещей:
+            камеры, инструменты, канцелярия и предметы интерьера.
+          </p>
+        </section>
+        <p class="site-footer__copy">2026 Винтаж-лавка. Учебный проект</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -235,3 +235,30 @@ button:disabled:hover {
   margin: var(--space);
 }
 
+/* Каталог: сайдбар и карточки */
+.catalog {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 32px;
+  align-items: start;
+}
+.filters {
+  padding: var(--space);
+  background: var(--bg-alt);
+  border-radius: var(--radius);
+}
+.filters h2 {
+  margin: 0 0 var(--space);
+  font-size: 1.2rem;
+}
+.filters p {
+  margin-bottom: 0;
+}
+.filters__option {
+  display: block;
+  padding: 4px 0;
+}
+.catalog__toolbar {
+  margin: 0 0 24px;
+}
+
