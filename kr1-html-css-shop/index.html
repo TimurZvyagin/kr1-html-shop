@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Винтаж-лавка — магазин винтажных вещей</title>
+    <meta
+      name="description"
+      content="Винтаж-лавка: магазин старинных вещей. Камеры, инструменты, канцелярия и предметы интерьера."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="site-header__logo" href="index.html">Винтаж-лавка</a>
+        <nav class="site-nav" aria-label="Основное меню">
+          <ul class="site-nav__list">
+            <li class="site-nav__item">
+              <a
+                class="site-nav__link site-nav__link--active"
+                href="index.html"
+                aria-current="page"
+                >Главная</a
+              >
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="catalog.html">Каталог</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1>Винтаж-лавка: вещи с историей</h1>
+          <p>
+            Небольшой магазин старинных и винтажных вещей для дома и творчества.
+          </p>
+          <div class="hero__actions">
+            <a class="button" href="catalog.html">Смотреть каталог</a>
+            <a class="button button--outline" href="order.html"
+              >Оставить заявку</a
+            >
+          </div>
+          <ul class="anchors">
+            <li><a href="#advantages">Преимущества</a></li>
+            <li><a href="#catalog">Каталог</a></li>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="advantages">
+        <div class="container">
+          <h2>Преимущества</h2>
+          <div class="advantages">
+            <article class="advantages__item">
+              <h3>Проверенное качество</h3>
+              <p>Каждую вещь осматриваем и описываем честно.</p>
+            </article>
+            <article class="advantages__item">
+              <h3>Доставка</h3>
+              <p>Аккуратно упаковываем и отправляем по всей России.</p>
+            </article>
+            <article class="advantages__item">
+              <h3>Гарантия</h3>
+              <p>Возвращаем деньги, если вещь не подошла.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="catalog">
+        <div class="container">
+          <h2>Популярные товары</h2>
+          <div class="product-grid">
+            <article class="product-card">
+              <span class="product-card__badge">Хит</span>
+              <img
+                class="product-card__img"
+                src="images/work-3.jpg"
+                alt="Две плёночные камеры на деревянной полке"
+                width="650"
+                height="350"
+              />
+              <h3 class="product-card__title">Плёночная камера</h3>
+              <p class="product-card__desc">
+                Механическая камера 35 мм в рабочем состоянии.
+              </p>
+              <p class="product-card__price">12 900 ₽</p>
+              <a class="button product-card__button" href="product.html"
+                >Подробнее</a
+              >
+            </article>
+            <article class="product-card">
+              <img
+                class="product-card__img"
+                src="images/work-2.jpg"
+                alt="Блокноты и деревянные подставки на столе"
+                width="650"
+                height="350"
+              />
+              <h3 class="product-card__title">Блокнот в обложке</h3>
+              <p class="product-card__desc">
+                Плотная бумага и прочная обложка.
+              </p>
+              <p class="product-card__price">890 ₽</p>
+              <a
+                class="button product-card__button"
+                href="product-notebook.html"
+                >Подробнее</a
+              >
+            </article>
+            <article class="product-card">
+              <img
+                class="product-card__img"
+                src="images/work-6.jpg"
+                alt="Набор старых инструментов на тёмной доске"
+                width="650"
+                height="350"
+              />
+              <h3 class="product-card__title">Набор инструментов</h3>
+              <p class="product-card__desc">
+                Молоток, топор и рабочие перчатки.
+              </p>
+              <p class="product-card__price">4 500 ₽</p>
+              <a class="button product-card__button" href="product-tools.html"
+                >Подробнее</a
+              >
+            </article>
+          </div>
+          <p>
+            <a class="button button--outline" href="catalog.html"
+              >Весь каталог</a
+            >
+          </p>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="contacts">
+        <div class="container">
+          <h2>Контакты</h2>
+          <p>
+            Москва, ул. Пушкина, д. Колотушкина<br />E-mail:
+            <a href="mailto:hello@example.com">hello@example.com</a>
+          </p>
+          <a class="button" href="contacts.html">Все контакты</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <section class="site-footer__about" id="about">
+          <h2 class="site-footer__title">О нас</h2>
+          <p class="site-footer__text">
+            Винтаж-лавка — небольшой магазин старинных и винтажных вещей:
+            камеры, инструменты, канцелярия и предметы интерьера.
+          </p>
+        </section>
+        <p class="site-footer__copy">2026 Винтаж-лавка. Учебный проект</p>
+      </div>
+    </footer>
+  </body>
+</html>
