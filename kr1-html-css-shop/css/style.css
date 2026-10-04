@@ -294,3 +294,103 @@ button:disabled:hover {
   gap: var(--space);
 }
 
+/* Страница товара */
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.product__img {
+  flex: 1 1 320px;
+  border-radius: var(--radius);
+}
+.product__info {
+  flex: 1 1 320px;
+}
+.product__features {
+  padding-left: 20px;
+}
+.product__price {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+/* Таблица */
+.compare-wrap {
+  overflow-x: auto;
+}
+.compare {
+  width: 100%;
+  min-width: 480px;
+  border-collapse: collapse;
+}
+.compare__caption {
+  padding-bottom: 8px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-align: left;
+}
+.compare__cell {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid var(--border);
+}
+.compare__cell--head {
+  color: #fff;
+  background: var(--primary);
+}
+
+/* Модалка */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space);
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.modal:target {
+  display: flex;
+}
+.modal__box {
+  position: relative;
+  max-width: 420px;
+  padding: 32px 24px 24px;
+  background: #fff;
+  border-radius: var(--radius);
+}
+.modal__close {
+  position: absolute;
+  top: 4px;
+  right: 12px;
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+
+/* footer */
+.site-footer {
+  padding: 32px 0;
+  text-align: center;
+  color: #fff;
+  background: var(--text);
+}
+.site-footer__title {
+  margin: 0 0 8px;
+  font-size: 1.1rem;
+}
+.site-footer__text {
+  margin: 0;
+}
+.site-footer__copy {
+  margin: 16px 0 0;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 700px) {
+  .catalog {
+    grid-template-columns: 1fr;
+  }
+}
